@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI.Extensions;
 
 namespace DesertImage.UI
 {
