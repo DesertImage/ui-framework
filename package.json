@@ -1,0 +1,10 @@
+  {
+    "name": "com.desertimage.events",
+    "version": "0.1.2",
+    "displayName": "Events",
+    "description": "",
+    "unity": "2017.4",
+    "keywords": [],
+    "dependencies": {
+  }
+}

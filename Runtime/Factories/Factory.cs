@@ -1,0 +1,1 @@
+﻿namespace DesertImage{    public abstract class Factory : IFactory    {    }}

@@ -1,0 +1,1 @@
+﻿using DesertImage.ECS;namespace DesertImage{    public interface IEntityFactory    {        void Link(IEntity entity);    }}

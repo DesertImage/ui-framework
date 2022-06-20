@@ -1,0 +1,1 @@
+﻿namespace DesertImage{    public interface ITickFixed    {        void FixedTick();    }}
