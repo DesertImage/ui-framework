@@ -6,6 +6,5 @@
     "unity": "2020.3",
     "keywords": [],
     "dependencies": {
-        "com.desertimage.events": "git+https://github.com/DesertImage/events.git"
   }
 }
