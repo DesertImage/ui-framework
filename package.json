@@ -1,10 +1,12 @@
   {
-    "name": "com.desertimage.events",
-    "version": "0.1.2",
-    "displayName": "Events",
+    "name": "com.desertimage.ecs",
+    "version": "0.2.1",
+    "displayName": "ECS",
     "description": "",
-    "unity": "2017.4",
+    "unity": "2020.3",
     "keywords": [],
     "dependencies": {
+        "git@github.com:DesertImage/LeanTweenPackage.git",
+        "git@github.com:DesertImage/Events.git"
   }
 }
