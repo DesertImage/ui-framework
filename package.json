@@ -6,6 +6,6 @@
     "unity": "2020.3",
     "keywords": [],
     "dependencies": {
-      "com.desertimage.leantweenpackage" : "git@github.com:DesertImage/lean-tween-package.git"
+      "com.desertimage.lean-tween" : "git@github.com:DesertImage/lean-tween.git"
   }
 }
