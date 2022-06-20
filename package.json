@@ -6,7 +6,6 @@
     "unity": "2020.3",
     "keywords": [],
     "dependencies": {
-        "com.desertimage.leantweenpackage": "ssh://git@github.com:DesertImage/LeanTweenPackage.git",
-        "com.desertimage.events": "ssh://git@github.com:DesertImage/Events.git"
+        "com.desertimage.events": "git+https://github.com/DesertImage/events.git"
   }
 }
