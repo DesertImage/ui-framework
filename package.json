@@ -1,11 +1,11 @@
   {
-    "name": "com.desertimage.ecs",
-    "version": "0.2.1",
-    "displayName": "ECS",
+    "name": "com.desertimage.ui",
+    "version": "0.3.0",
+    "displayName": "UI framework",
     "description": "",
     "unity": "2020.3",
     "keywords": [],
     "dependencies": {
-      "com.desertimage.events" : "git@github.com:DesertImage/events.git"
+      "com.desertimage.leantweenpackage" : "git@github.com:DesertImage/lean-tween-package.git"
   }
 }

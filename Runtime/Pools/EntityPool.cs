@@ -1,1 +1,0 @@
-﻿using DesertImage.ECS;namespace DesertImage.Pools{    public class EntityPool : Pool<IEntity>    {        private int _instancesCreated;        protected override IEntity CreateInstance()        {            var entity = new Entity(_instancesCreated);            _instancesCreated++;            return entity;        }    }}

@@ -1,53 +1,39 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace DesertImage.Extensions
 {
     public static partial class CanvasExtensions
     {
-        private static Camera MainCamera
+        public static float GetChildWidthSum(this Transform transform)
         {
-            get
+            var sum = 0f;
+
+            if (transform.childCount == 0) return 0f;
+
+            for (var i = 0; i < transform.childCount; i++)
             {
-                if (!_mainCamera) _mainCamera = Camera.main;
+                var childRect = transform.GetChild(i) as RectTransform;
 
-                return _mainCamera;
+                sum += childRect.sizeDelta.x;
             }
+
+            return sum;
         }
 
-        private static Camera _mainCamera;
-
-        public static Vector3 WorldToUISpace(this Canvas parentCanvas, Vector3 worldPos)
+        public static float GetChildHeightSum(this Transform transform)
         {
-            //Convert the world for screen point so that it can be used with ScreenPointToLocalPointInRectangle function
-            var screenPos = MainCamera.WorldToScreenPoint(worldPos);
+            var sum = 0f;
 
-            //Convert the screenpoint to ui rectangle local point
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(parentCanvas.transform as RectTransform, screenPos,
-                parentCanvas.worldCamera, out var movePos);
-            //Convert the local point to world point
-            return parentCanvas.transform.TransformPoint(movePos);
-        }
+            if (transform.childCount == 0) return 0f;
 
-        public static Vector3 WorldToUISpace(this Canvas parentCanvas, Camera camera, Vector3 worldPos)
-        {
-            //Convert the world for screen point so that it can be used with ScreenPointToLocalPointInRectangle function
-            var screenPos = camera.WorldToScreenPoint(worldPos);
+            for (var i = 0; i < transform.childCount; i++)
+            {
+                var childRect = transform.GetChild(i) as RectTransform;
 
-            //Convert the screenpoint to ui rectangle local point
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(parentCanvas.transform as RectTransform, screenPos,
-                camera, out var movePos);
-            //Convert the local point to world point
-            return parentCanvas.transform.TransformPoint(movePos);
-        }
+                sum += childRect.sizeDelta.y;
+            }
 
-        public static void SetAlpha(this Image image, float alpha)
-        {
-            var color = image.color;
-
-            color.a = alpha;
-
-            image.color = color;
+            return sum;
         }
     }
 }

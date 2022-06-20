@@ -1,1 +1,0 @@
-﻿using DesertImage.Events;namespace DesertImage.ECS{    public interface IEntity : IComponentHolder, IPoolable, IEventUnit    {        int Id { get; }        IComponent[] Components { get; }    }}

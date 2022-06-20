@@ -1,1 +1,0 @@
-﻿namespace DesertImage{    public interface ITickLate    {        void LateTick();    }}

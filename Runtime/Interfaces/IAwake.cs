@@ -1,1 +1,0 @@
-﻿using System.Threading.Tasks;namespace DesertImage{    public interface IAwake    {        void OnAwake();    }}

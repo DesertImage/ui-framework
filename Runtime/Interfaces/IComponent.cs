@@ -1,1 +1,0 @@
-﻿using System;using DesertImage.Events;namespace DesertImage{    public interface IComponent : IPoolable, IEventUnit    {        event Action<IComponent, IComponent> OnPreUpdated;        event Action<IComponent> OnUpdated;        ushort Id { get; }        int HashCode { get; }        void PreUpdated(IComponent component);        void Updated();    }}
