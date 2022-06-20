@@ -35,5 +35,19 @@ namespace DesertImage.Extensions
 
             return sum;
         }
+        
+        public static void SetStretch(this RectTransform rect)
+        {
+            rect.transform.localScale = Vector3.one;
+
+            rect.anchoredPosition = new Vector2();
+
+            rect.anchorMin = new Vector2(0f, 0f);
+            rect.anchorMax = new Vector2(1f, 1f);
+
+            rect.pivot = new Vector2(0.5f, 0.5f);
+
+            rect.offsetMin = rect.offsetMax = new Vector2(0, 0);
+        }
     }
 }
