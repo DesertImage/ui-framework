@@ -1,4 +1,3 @@
-using DesertImage.Extensions;
 using UnityEngine;
 
 namespace DesertImage.UI
